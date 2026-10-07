@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
 
-df = pd.read_csv("data/student_data.csv")
+df = pd.read_csv("student_data.csv")
 
 X = df[["study_hours", "attendance", "previous_score"]]
 y = df["final_score"]
